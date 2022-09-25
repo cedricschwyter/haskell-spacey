@@ -2,7 +2,7 @@ import System.Environment
 
 main :: IO ()
 main = do
-        (file:_) <- System.Environment.getArgs
+        (file:_) <- getArgs
         source <- readFile file
         putStrLn source
         return ()
